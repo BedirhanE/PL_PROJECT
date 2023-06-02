@@ -1,0 +1,5 @@
+ATAMA x 5
+ATAMA y 3
+TOPLA z x y
+YAZDIR "x ve y nin toplamı: z "
+YAZDIR z
