@@ -34,9 +34,9 @@ public class TurkishLanguage {
                         hata(writer, "YAZDIR komutunun argümanı eksik");
                     }
                 } else if (tokens[0].equalsIgnoreCase("ATAMA") || tokens[0].equalsIgnoreCase("ASSIGN")) {
-                    if (tokens.length == 2) {  // Fixed the condition here
+                    if (tokens.length == 2) {
                         String[] assignTokens = tokens[1].split(" ", 2);  // Split the assignTokens into two tokens
-                        if (assignTokens.length == 2) {  // Check if there are two tokens
+                        if (assignTokens.length == 2) {
                             String variableName = assignTokens[0];
                             int value = Integer.parseInt(assignTokens[1]);
                             atama(variableName, value);
@@ -47,7 +47,7 @@ public class TurkishLanguage {
                         hata(writer, "ATAMA komutunun argümanları eksik veya fazla");
                     }
                 } else if (tokens[0].equalsIgnoreCase("TOPLA") || tokens[0].equalsIgnoreCase("ADD")) {
-                    if (tokens.length == 2) {  // Fixed the condition here
+                    if (tokens.length == 2) {
                         String[] addTokens = tokens[1].split(" ");
                         if (addTokens.length == 3) {
                             String variableName = addTokens[0];
@@ -66,7 +66,7 @@ public class TurkishLanguage {
                         hata(writer, "TOPLA komutunun argümanları eksik veya fazla");
                     }
                 } else if (tokens[0].equalsIgnoreCase("CIKAR") || tokens[0].equalsIgnoreCase("SUBTRACT")) {
-                    if (tokens.length == 2) {  // Fixed the condition here
+                    if (tokens.length == 2) {
                         String[] subtractTokens = tokens[1].split(" ");
                         if (subtractTokens.length == 3) {
                             String variableName = subtractTokens[0];
@@ -85,7 +85,7 @@ public class TurkishLanguage {
                         hata(writer, "CIKAR komutunun argümanları eksik veya fazla");
                     }
                 } else if (tokens[0].equalsIgnoreCase("CARP") || tokens[0].equalsIgnoreCase("MULTIPLY")) {
-                    if (tokens.length == 2) {  // Fixed the condition here
+                    if (tokens.length == 2) {
                         String[] multiplyTokens = tokens[1].split(" ");
                         if (multiplyTokens.length == 3) {
                             String variableName = multiplyTokens[0];
@@ -104,7 +104,7 @@ public class TurkishLanguage {
                         hata(writer, "CARP komutunun argümanları eksik veya fazla");
                     }
                 } else if (tokens[0].equalsIgnoreCase("BOL") || tokens[0].equalsIgnoreCase("DIVIDE")) {
-                    if (tokens.length == 2) {  // Fixed the condition here
+                    if (tokens.length == 2) {
                         String[] divideTokens = tokens[1].split(" ");
                         if (divideTokens.length == 3) {
                             String variableName = divideTokens[0];
@@ -172,3 +172,4 @@ public class TurkishLanguage {
         interpreter.interpret(inputFilePath, outputFilePath);
     }
 }
+

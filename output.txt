@@ -1,2 +1,2 @@
-x ve y nin toplamı: z 
+"x ve y nin toplamı:" + z
 z
